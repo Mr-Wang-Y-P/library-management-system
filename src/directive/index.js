@@ -1,4 +1,4 @@
-import defaultImg from '@/assets/images/error.png'
+import defaultImg from '../assets/images/Error.png'
 import { useIntersectionObserver } from '@vueuse/core'
 export default {
     // 需要拿到 main.js 中由 createApp 方法产出的 app 实例对象
