@@ -3,7 +3,7 @@
     <div class="box">
       <div class="head">
         <span class="span1">公告</span>
-        <el-button type="primary" @click="dialog = true">新增</el-button>
+        <el-button v-if="userType == 'manage'" type="primary" @click="dialog = true">新增</el-button>
       </div>
       <div class="color"></div>
       <div class="body">
@@ -13,7 +13,7 @@
             <a href="#"
               ><span class="span2">{{ item.title }} </span></a
             >
-            <span class="span3">{{ item.time }} <ElButton type="danger" @click.stop="toDetel(item.announceId)">删除</ElButton></span>
+            <span class="span3">{{ item.time }} <ElButton type="danger" v-if="userType == 'manage'" @click.stop="toDetel(item.announceId)">删除</ElButton></span>
           </li>
         </ul>
       </div>
@@ -59,13 +59,14 @@
 
 <script setup>
 import { onMounted, ref, reactive } from 'vue'
-import { addAnnounce, getAnnounce, deletedAnnounce } from '../utils/getAnnounce'
+import { addAnnounce, getAnnounce, deletedAnnounce } from '../../server/data/getAnnounce'
 import router from '../router';
 import { customAlphabet } from 'nanoid'
 import { format } from '@/assets/js/format';
 import { ElDrawer, ElMessageBox, ElMessage, ElButton } from 'element-plus'
 
 const nanoid = customAlphabet('1234567890', 5)
+const userType = ref('')
 const formLabelWidth = '80px'
 let timer
 const dialog = ref(false)
@@ -162,6 +163,10 @@ const toDetel = (announceId) => {
 onMounted(async () => {
   const res = await getAnnounce()
   announceList.value = res.data
+  const result = JSON.parse(sessionStorage.getItem('userInfo'))
+  if(result){
+    userType.value = result.type
+  }
   // console.log(res.data)
   // console.log(announceList)
 })
