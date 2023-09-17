@@ -74,7 +74,7 @@
 import { ArrowDown } from '@element-plus/icons-vue'
 import { ElMessage } from 'element-plus'
 import { reactive, ref, onMounted } from 'vue'
-import { updateUser } from '@/utils/getUser'
+import { updateUser } from '../utils/getUser'
 import { useRouter } from 'vue-router';
 
 const router = useRouter()

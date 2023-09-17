@@ -44,7 +44,7 @@
 import { reactive, ref, onMounted, nextTick } from 'vue'
 import { ElMessage } from 'element-plus'
 import {useRoute} from 'vue-router'
-import { getUserInfo,updateUser } from '@/utils/getUser'
+import { getUserInfo,updateUser } from '../utils/getUser'
 const route = useRoute()
 // import { useFormStore } from '@/stores/changeForm'
 const imgChoice = ref('null')

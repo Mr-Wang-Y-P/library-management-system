@@ -48,7 +48,7 @@
 
 <script setup>
 import { ref, onMounted, watch, nextTick } from 'vue'
-import { getBooksList, getSelectedBook } from '@/utils/getbooks'
+import { getBooksList, getSelectedBook } from '../utils/getbooks'
 import lookBookHeader from '../components/lookBookHeader.vue';
 const sortList = ref(['全部'])
 const bookList = ref({})

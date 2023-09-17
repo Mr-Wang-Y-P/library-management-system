@@ -34,7 +34,7 @@
 <script setup>
 import { Search } from '@element-plus/icons-vue'
 import { ref, onMounted } from 'vue'
-import { getUserList, getUserInfo, deletedUser } from '@/utils/getUser'
+import { getUserList, getUserInfo, deletedUser } from '../utils/getUser'
 const searchText = ref(null)
 const tableData = ref([])
 const searchBook = async (searchText) => {

@@ -70,10 +70,10 @@
 <script setup>
 import { Search } from '@element-plus/icons-vue'
 import { ref, onMounted, reactive,watch } from 'vue'
-import { getSelectedBorrowBook, getBorrowList, addBorrow, updateBorrow,deletedBorrow } from '@/utils/getBorrow'
-import { getUser } from '@/utils/getUser'
-import { getBook } from '@/utils/getbooks'
-import { formatDate, deleteDays, addDays } from '@/assets/js/addTime'
+import { getSelectedBorrowBook, getBorrowList, addBorrow, updateBorrow,deletedBorrow } from '../utils/getBorrow'
+import { getUser } from '../utils/getUser'
+import { getBook } from '../utils/getbooks'
+import { formatDate, deleteDays, addDays } from '../assets/js/addTime'
 import { ElDrawer, ElMessage, ElMessageBox } from 'element-plus'
 import { customAlphabet } from 'nanoid'
 const nanoid = customAlphabet('1234567890', 8)

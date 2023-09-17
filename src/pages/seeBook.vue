@@ -57,8 +57,8 @@
 import lookBookHeader from '../components/lookBookHeader.vue';
 import { onMounted, ref } from 'vue'
 import { useRoute } from 'vue-router'
-import { getSelectedBook, updateBook } from '@/utils/getbooks'
-import { addBorrow, getBorrowBook, updateBorrow } from '@/utils/getBorrow'
+import { getSelectedBook, updateBook } from '../utils/getbooks'
+import { addBorrow, getBorrowBook, updateBorrow } from '../utils/getBorrow'
 import { addDays, formatDate, deleteDays } from '@/assets/js/addTime'
 import { customAlphabet } from 'nanoid'
 import { ElMessage, ElMessageBox } from 'element-plus'

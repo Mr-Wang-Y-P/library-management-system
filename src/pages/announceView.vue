@@ -59,7 +59,7 @@
 
 <script setup>
 import { onMounted, ref, reactive } from 'vue'
-import { addAnnounce, getAnnounce, deletedAnnounce } from '@/utils/getAnnounce'
+import { addAnnounce, getAnnounce, deletedAnnounce } from '../utils/getAnnounce'
 import router from '../router';
 import { customAlphabet } from 'nanoid'
 import { format } from '@/assets/js/format';

@@ -54,7 +54,7 @@
 
 <script setup>
 import { onMounted, ref, reactive } from 'vue'
-import { getDetail, updateAnnounce } from '@/utils/getAnnounce'
+import { getDetail, updateAnnounce } from '../utils/getAnnounce'
 import { useRoute } from 'vue-router';
 import { format } from '@/assets/js/format';
 import { ElDrawer, ElMessageBox, ElMessage, ElButton } from 'element-plus'

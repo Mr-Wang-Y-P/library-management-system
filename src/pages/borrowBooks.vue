@@ -23,7 +23,7 @@
 
 <script setup>
 import {ref,onMounted} from 'vue'
-import {getBorrowBook,getBorrowList,getSelectedBorrowBook} from '@/utils/getBorrow'
+import {getBorrowBook,getBorrowList,getSelectedBorrowBook} from '../utils/getBorrow'
 import {formatDate,deleteDays} from '@/assets/js/addTime'
 import { Search } from '@element-plus/icons-vue'
 const tableData = ref([])
