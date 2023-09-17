@@ -22,7 +22,7 @@
 <script setup>
 import { User, Lock, Message } from '@element-plus/icons-vue'
 import { reactive, ref } from 'vue'
-import { addUser } from '../../../server/data/getUser'
+import { addUser } from '@/utils/getUser'
 import { customAlphabet } from 'nanoid'
 import { useFormStore } from '@/stores/changeForm'
 import { ElMessage } from 'element-plus'

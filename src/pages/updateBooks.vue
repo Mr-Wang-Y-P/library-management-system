@@ -51,7 +51,7 @@
 import { reactive, ref, onMounted, nextTick } from 'vue'
 import { ElMessage } from 'element-plus'
 // import { customAlphabet } from 'nanoid'
-import {getSelectedBook,updateBook } from '../../server/data/getbooks'
+import {getSelectedBook,updateBook } from '@/utils/getbooks'
 import {useRoute} from 'vue-router'
 const route = useRoute()
 const imgChoice = ref('null')

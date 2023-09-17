@@ -45,7 +45,7 @@
 import { reactive, ref, onMounted } from 'vue'
 import { ElMessage } from 'element-plus'
 import { customAlphabet } from 'nanoid'
-import { addUser } from '../../server/data/getUser'
+import { addUser } from '@/utils/data/getUser'
 // import { useFormStore } from '@/stores/changeForm'
 // const imgChoice = ref('null')
 const ruleFormRef = ref(null)

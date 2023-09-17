@@ -33,10 +33,10 @@
 <script setup>
 import { User, Lock } from '@element-plus/icons-vue'
 import { reactive, ref } from 'vue'
-import { getUser } from "../../../server/data/getUlogin"
-import { getUserInfo } from "../../../server/data/getUser"
-import { getManage } from "../../../server/data/getMlogin"
-import { getManageInfo } from "../../../server/data/getManage"
+import { getUser } from "@/utils/getUlogin"
+import { getUserInfo } from "@/utils/getUser"
+import { getManage } from "@/utils/getMlogin"
+import { getManageInfo } from "@/utils/getManage"
 import { useRouter } from 'vue-router';
 import { ElMessage } from 'element-plus'
 

@@ -51,7 +51,7 @@
 import { reactive, ref, onMounted, nextTick } from 'vue'
 import { ElMessage } from 'element-plus'
 import { customAlphabet } from 'nanoid'
-import { addBook } from '../../server/data/getbooks'
+import { addBook } from '@/utils/getbooks'
 const imgChoice = ref('null')
 const ruleFormRef = ref(null)
 const onlineImg = ref(null)
