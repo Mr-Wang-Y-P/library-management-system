@@ -20,7 +20,7 @@
                 <el-table-column  align="center" label="书名" prop="name" />
                 <el-table-column  align="center" label="作者" prop="author" />
                 <el-table-column  align="center" label="分类" prop="sort" />
-                <el-table-column show-overflow-tooltip="true"  align="center" label="描述" prop="describe" />
+                <el-table-column show-overflow-tooltip  align="center" label="描述" prop="describe" />
                 <el-table-column  align="center" label="出版社" prop="publisher" />
                 <el-table-column  align="center" label="数量" prop="stock" />
                 <el-table-column align="center" label="操作">

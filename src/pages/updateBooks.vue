@@ -135,6 +135,7 @@ const submitForm =async (formEl) => {
     formEl.validate(async(valid) => {
         if (valid) {
             console.log('submit!')
+            ElMessage.success('提交成功!')
             // console.log(ruleForm)
             ruleForm.nameid = Number((route.params.id))
             // console.log(ruleForm)
@@ -146,6 +147,7 @@ const submitForm =async (formEl) => {
             // console.log(ruleForm);
            
         } else {
+            ElMessage.error('提交失败!')
             console.log('error submit!')
             return false
         }
